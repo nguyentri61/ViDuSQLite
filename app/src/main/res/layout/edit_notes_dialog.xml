@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÊM NOTES"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3F00FF"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên Notes"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CẬP NHẬT NOTES"
+                android:textColor="#FFFFFF"
+                android:background="#8000FF"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonHuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HỦY"
+                android:textColor="#FFFFFF"
+                android:background="#8000FF"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
